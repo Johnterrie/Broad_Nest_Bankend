@@ -11,7 +11,8 @@ export abstract class AbstractEntity<T extends AbstractDto = AbstractDto> {
 
   abstract dtoClass: new (entity: AbstractEntity, option?: any) => T;
 
-  // toDto(option?: any): T {
-  //   ret
-  // }
+  toDto(options?: any): T {
+    return null
+    // return U0tilsService.toDto(this.dtoClass, this, options);
+  }
 }
